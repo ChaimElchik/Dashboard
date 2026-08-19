@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <title>Home Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="dashboard">
+
+    <header id="topbar">
+      <div>
+        <div id="dayName">WEDNESDAY</div>
+        <div id="dateText">19 AUGUST 2026</div>
+      </div>
+      <div id="mainClock">10:34</div>
+    </header>
+
+    <main id="content">
+      <section id="photoPanel" aria-label="Photo album">
+        <img id="photoA" class="photo active" alt="">
+        <img id="photoB" class="photo" alt="">
+        <div id="photoShade"></div>
+        <div id="photoCaption">PHOTO ALBUM</div>
+        <div id="photoCounter"></div>
+      </section>
+
+      <section id="weatherPanel">
+        <div class="weatherCard">
+          <div class="sectionTitle" id="weatherTitle0">AMSTERDAM</div>
+          <div class="weatherSummary">
+            <div class="weatherIcon" id="weatherIcon0">☀</div>
+            <div class="weatherTemp" id="temperature0">--°</div>
+            <div class="weatherDescription" id="weatherDescription0">Loading…</div>
+          </div>
+          <div class="weatherMeta">
+            Feels <strong id="feelsLike0">--°</strong>
+            &nbsp; Wind <strong id="windSpeed0">--</strong>
+          </div>
+          <div class="miniForecast" id="forecast0"></div>
+          <div class="weatherStatus" id="weatherStatus0">Updating…</div>
+        </div>
+
+        <div class="weatherCard secondWeather">
+          <div class="sectionTitle" id="weatherTitle1">LANCASTER</div>
+          <div class="weatherSummary">
+            <div class="weatherIcon" id="weatherIcon1">☀</div>
+            <div class="weatherTemp" id="temperature1">--°</div>
+            <div class="weatherDescription" id="weatherDescription1">Loading…</div>
+          </div>
+          <div class="weatherMeta">
+            Feels <strong id="feelsLike1">--°</strong>
+            &nbsp; Wind <strong id="windSpeed1">--</strong>
+          </div>
+          <div class="miniForecast" id="forecast1"></div>
+          <div class="weatherStatus" id="weatherStatus1">Updating…</div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="clocks">
+      <div class="clockCard">
+        <div class="city">AMSTERDAM</div>
+        <div class="time" id="clock0">--:--</div>
+        <div class="zone">NETHERLANDS</div>
+      </div>
+      <div class="clockCard">
+        <div class="city">LANCASTER</div>
+        <div class="time" id="clock1">--:--</div>
+        <div class="zone">UNITED KINGDOM</div>
+      </div>
+      <div class="clockCard">
+        <div class="city">TEL AVIV</div>
+        <div class="time" id="clock2">--:--</div>
+        <div class="zone">ISRAEL</div>
+      </div>
+      <div class="clockCard">
+        <div class="city">SYDNEY</div>
+        <div class="time" id="clock3">--:--</div>
+        <div class="zone">AUSTRALIA</div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="config.js"></script>
+  <script src="photos.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
